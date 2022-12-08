@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Productos</title>
+</head>
+<body>
+    <h1>Cargue sus productos aquí</h1>
+    <form action="http://localhost:8080/api/productos/guardar" method="post">
+        <label for="title">Nombre del producto</label>
+        <input type="text" id="title" name="title" /><br><br>
+
+        <label for="price">Precio</label>
+        <input type="number" id="price" name="price" /><br><br>
+
+        <label for="url">Url de imagen</label>
+        <input type="text" id="url" name="url" /><br><br>
+        
+        <button type="submit">Cargar</button>
+    </form>
+</body>
+</html>
